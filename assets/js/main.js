@@ -1,5 +1,5 @@
-import fetchData from './fetch';
-import setMap from './map';
+import fetchData from './fetch.js';
+import setMap from './map.js';
 
 
 document.addEventListener('DOMContentLoaded', () => {
