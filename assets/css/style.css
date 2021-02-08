@@ -190,6 +190,5 @@ header .form .submit-btn {
 }
 
 #map {
-    flex: 1 1 70vh;
-    height: 660px;
+    height: 670px;
 }

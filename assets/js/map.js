@@ -20,7 +20,7 @@ function setMap({
             &copy; OpenStreetMap contributors
         </a>`;
 
-    L.tileLayer('https://api.maptiler.com/maps/hybrid/{z}/{x}/{y}.jpg?key=09L75MTDaCzv2tDie8A4', {
+    L.tileLayer('https://api.maptiler.com/maps/streets/{z}/{x}/{y}.png?key=09L75MTDaCzv2tDie8A4', {
         attribution: titleAttribution
     }).addTo(map);
 
