@@ -1,0 +1,153 @@
+/* Variables */
+:root {
+    /* Colors */
+    --black: #000;
+    --white: #FFF;
+    --VeryDarkGray: hsl(0, 0%, 17%);
+    --DarkGray: hsl(0, 0%, 59%);
+
+    /* Font Variables */
+    --body-font-size: 18px;
+    --body-font-family: 'Rubik', sans-serif;
+}
+
+/***
+*
+====================================================================
+    Global Settings
+====================================================================
+*
+***/
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--body-font-family);
+    font-size: var(--body-font-size);
+    color: var(--DarkGray);
+    text-align: center;
+}
+
+ul,
+ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+    transition: all 500ms ease;
+    -moz-transition: all 500ms ease;
+    -webkit-transition: all 500ms ease;
+    -ms-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+}
+a:hover,
+a:focus {
+    color: inherit;
+    text-decoration: none;
+}
+
+
+/* Header */
+header {
+    background: url(../images/bacground/pattern-bg.png) no-repeat center;
+    background-size: cover;
+    padding-top: 50px;
+}
+
+/* header > title */
+header .title {
+    font-size: 35px;
+    color: var(--white);
+}
+
+/* header > form */
+header .form {
+    margin: 20px auto;
+    display: flex;
+    width: min-content;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+header .form .btn {
+    padding: 1rem;
+    border: none;
+}.btn:hover,
+ .btn:focus {
+     outline: 0;
+}
+
+header .form .search-btn {
+    width: min(450px, 70vw);
+    font-size: 15px;
+}
+
+header .form .submit-btn {
+    flex: 0 0 15%;
+    cursor: pointer;
+    background-color: var(--VeryDarkGray);
+}header .form .submit-btn:hover {
+    opacity: 0.8;
+}
+
+/* header > ip-data-list */
+.ip-data-list {
+    background-color: var(--white);
+    box-shadow: 0px 5px 5px rgb(0 0 0 / 9%); /* Edit before finish */
+    border: 1px solid var(--black);
+    border-radius: 15px;
+
+    width: 70%;
+    margin: auto;
+    padding: 30px 20px;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: "grid-card-1 grid-card-2 grid-card-3 grid-card-4";
+    text-align: start;
+
+    position: relative;
+    top: 65px;
+}
+
+.user-data-item .data-term {
+    font-size: 15px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+}
+
+.user-data-item .data-value {
+    color: var(--black);
+    font-weight: 500;
+    font-size: 22px;
+}
+
+.user-data-item:not(:first-child) {
+    padding-left: 20px;
+}
+
+.user-data-item:not(:last-child) {
+    border-right: 1px solid var(--VeryDarkGray);
+}
+
+
+
+
+/* .user-data-item:first-child {}
+.user-data-item:nth-child(2) {}
+.user-data-item:nth-child(3) {}
+.user-data-item:last-child {} */
