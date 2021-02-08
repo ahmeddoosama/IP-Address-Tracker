@@ -25,11 +25,11 @@ function setMap({
         attribution: titleAttribution
     }).addTo(map);
 
-    let markerIcon = L.icon({
-		iconUrl: '../images/icons/icon-location.svg',
-	})
+    // let markerIcon = L.icon({
+	// 	iconUrl: '../images/icons/icon-location.svg',
+	// })
 
-    marker = L.marker([lat, lng], {icon: markerIcon}).addTo(map);
+    marker = L.marker([lat, lng]).addTo(map);
 }
 
 export default setMap;
