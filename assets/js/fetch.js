@@ -1,4 +1,4 @@
-BASE_URL = "https://geo.ipify.org/api/v1?apiKey=at_ZamL8QPHuXy13Kj5SJiSdREZ7R8yY&ipAddress=8.8.8.8";
+const BASE_URL = "https://geo.ipify.org/api/v1?apiKey=at_ZamL8QPHuXy13Kj5SJiSdREZ7R8yY&ipAddress=8.8.8.8";
 
 async function checkResponse(res) {
     if(res.ok)

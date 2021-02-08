@@ -1,9 +1,12 @@
 import fetchData from './fetch.js';
+import handleSubmit from './submit.js';
 import setMap from './map.js';
 
 
 document.addEventListener('DOMContentLoaded', () => {
-    
+    setUpEverything();
+
+    document.querySelector('form').onsubmit = handleSubmit;
 })
 
 async function setUpEverything(queryType, queryValue) {
