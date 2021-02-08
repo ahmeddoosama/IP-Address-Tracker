@@ -188,8 +188,4 @@ header .form .submit-btn {
     }
 }
 
-
-/* .user-data-item:first-child {}
-.user-data-item:nth-child(2) {}
-.user-data-item:nth-child(3) {}
-.user-data-item:last-child {} */
+#mapid { height: 180px; }
