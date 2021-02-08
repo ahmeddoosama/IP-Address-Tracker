@@ -1,3 +1,4 @@
+// import all components
 import fetchData from './fetch.js';
 import handleSubmit from './submit.js';
 import setMap from './map.js';
