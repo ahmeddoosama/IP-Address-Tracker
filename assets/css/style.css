@@ -120,6 +120,7 @@ header .form .submit-btn {
 
     position: relative;
     top: 65px;
+    z-index: 555;
 }
 
 .user-data-item .data-term {
@@ -188,4 +189,7 @@ header .form .submit-btn {
     }
 }
 
-#mapid { height: 180px; }
+#map {
+    flex: 1 1 70vh;
+    height: 660px;
+}
