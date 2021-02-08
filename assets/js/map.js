@@ -4,13 +4,14 @@ function setMap({
     lat,
     lng
 }) {
+    // reset map when it's to be refreshed for the queried ipAddress/domain
     if (map) {
-        map.remove()
-        map = undefined
+        map.remove();
+        map = undefined;
         document.getElementById('map').innerHTML = '';
     }
 
-    map = L.map('map').setView([lat, lng], 7)
+    map = L.map('map').setView([lat, lng], 7);
 
     const titleAttribution = `
         <a href="https://www.maptiler.com/copyright/" target="_blank">
@@ -24,11 +25,11 @@ function setMap({
         attribution: titleAttribution
     }).addTo(map);
 
-    // let markerIcon = L.icon({
-	// 	iconUrl: '../images/icons/icon-location.svg'
-	// })
+    let markerIcon = L.icon({
+		iconUrl: '../images/icons/icon-location.svg',
+	})
 
-    marker = L.marker([lat, lng]).addTo(map);
+    marker = L.marker([lat, lng], {icon: markerIcon}).addTo(map);
 }
 
 export default setMap;
