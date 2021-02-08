@@ -75,7 +75,7 @@ header .title {
 
 /* header > form */
 header .form {
-    margin: 20px auto;
+    margin: 20px auto -20px auto;
     display: flex;
     width: min-content;
     border-radius: 10px;
@@ -107,7 +107,6 @@ header .form .submit-btn {
 .ip-data-list {
     background-color: var(--white);
     box-shadow: 0px 5px 5px rgb(0 0 0 / 9%); /* Edit before finish */
-    border: 1px solid var(--black);
     border-radius: 15px;
 
     width: 70%;
@@ -144,7 +143,50 @@ header .form .submit-btn {
     border-right: 1px solid var(--VeryDarkGray);
 }
 
+@media (max-width: 767px) {
+    header .title {
+        font-size: 30px;
+    }
+    
+    .ip-data-list {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-areas: "grid-card-1" "grid-card-2" "grid-card-3" "grid-card-4";
+        text-align: center;
+        width: 90%;
+    }
 
+    .user-data-item .data-term {
+        font-size: 10px;
+        margin-bottom: 5px;
+    }
+
+    .user-data-item .data-value {
+        font-size: 17px;
+        margin-bottom: 20px;
+    }
+
+    .user-data-item:not(:last-child) {
+        border-right: none
+    }
+
+    .user-data-item:not(:first-child) {
+        padding-left: 0;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .ip-data-list {
+        width: 90%;
+    }
+
+    .user-data-item .data-term {
+        font-size: 12px;
+    }
+
+    .user-data-item .data-value {
+        font-size: 15px;
+    }
+}
 
 
 /* .user-data-item:first-child {}
