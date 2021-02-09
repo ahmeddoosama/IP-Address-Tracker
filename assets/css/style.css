@@ -3,6 +3,7 @@
     /* Colors */
     --black: #000;
     --white: #FFF;
+    --gray: #dadada;
     --VeryDarkGray: hsl(0, 0%, 17%);
     --DarkGray: hsl(0, 0%, 59%);
 
@@ -189,6 +190,31 @@ header .form .submit-btn {
     }
 }
 
+/* Map section */
 #map {
     height: 670px;
+}
+
+/* Footer */
+footer {
+    background-color: var(--VeryDarkGray);
+    color: var(--gray);
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 120px;
+    font-size: 20px;
+}
+
+footer .social-links a:not(:last-child) {
+    margin-right: 5px;
+}
+footer .social-links a:hover {
+    opacity: .8;
+}
+
+@media (max-width: 767px) {
+    footer {
+        padding: 10px 10px;
+        font-size: 15px;
+    }
 }
